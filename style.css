@@ -85,9 +85,11 @@ p {
         width: 30px;
         display: block;
         margin: 0 auto;
-        padding: 10px 0;
+        padding: 1rem 0;
         cursor: pointer;
         position: relative;
+        
+        
       }
       .burger-input + label:after, .burger-input + label:before,
       .burger-input + label .burger {
@@ -101,9 +103,11 @@ p {
         -webkit-transition: all 300ms ease-in-out;
         -moz-transition: all 300ms ease-in-out;
         transition: all 300ms ease-in-out;
+        
       }
       .burger-input:checked + label {
         top: 4px;
+        
       }
       .burger-input:checked + label:before {
         -webkit-transform: translateY(2px) rotate(135deg);
@@ -118,6 +122,7 @@ p {
         -ms-transform: translateY(-12px) rotate(-135deg);
         -o-transform: translateY(-12px) rotate(-135deg);
         transform: translateY(-12px) rotate(-135deg);
+        
       }
       .burger-input:checked + label .burger {
         -webkit-transform: scale(0);
@@ -129,30 +134,36 @@ p {
       }
 
       header {
-        display: flex;
+        position:fixed;
+        width:100%;
+        display:flex;
+        z-index: 10;
         flex-direction: column;
         align-items: center;
-
+        
+        
         
 
-        justify-content:space-between;
+      
         background-color: #eeaeca;
-        -webkit-transition: all 300ms ease-in-out;
-        -moz-transition: all 300ms ease-in-out;
-        transition: all 300ms ease-in-out;
+        
 
       }
+
 
       
 
       .burger-input:checked ~ nav {
         display: flex;
         
+        
         flex-direction: column;
-        margin: 2rem;
+        
      
-        height: 80vh;
+        height: 100vh;
         width: 100%;
+        background-color:#7691dd;
+        
       }
 
       .burger-input:checked ~ nav ul {
@@ -164,6 +175,7 @@ p {
         padding: 0;
         width: 100%;
         list-style: none;
+        
     
       }
 
@@ -185,6 +197,7 @@ p {
       nav {
         display: none;
         
+        
       }
       
       ul {
@@ -194,8 +207,8 @@ p {
         box-sizing: border-box;
         margin: 0;
         padding: 0;
-        width: 100%;
         list-style: none;
+
         
       }
       ul a {
@@ -214,7 +227,6 @@ p {
         background-color:grey;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         -webkit-transition: all 300ms ease-in-out;
         -moz-transition: all 300ms ease-in-out;
         transition: all 300ms ease-in-out;
@@ -228,6 +240,7 @@ p {
         justify-content: center;
         align-items: center;
         text-align: center;
+        margin-top: 3rem;
     }
       
       *, :before, :after {
